@@ -2,6 +2,7 @@ class sentry::install (
   $method = undef,
   $path   = '/var/sentry'
 ) {
+    include python
     $virtualenv_path = "${path}/virtualenv"
 
     # user/group
